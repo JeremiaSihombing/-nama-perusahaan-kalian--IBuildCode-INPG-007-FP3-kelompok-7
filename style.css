@@ -37,7 +37,6 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-}
-.banner-button:hover, .banner-button:active {
-    background: linear-gradient(270deg, #E73587 0%, #8C32F0 100%)
-}
+  }
+
+ 
