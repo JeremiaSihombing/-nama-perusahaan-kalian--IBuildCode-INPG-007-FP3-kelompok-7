@@ -7,7 +7,8 @@
     <link rel="shortcut icon" href="./assets/BuildCode.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Basic">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
 </head>
 <body>
     <header class="navbar navbar-expand-lg shadow-sm p-3 mb-5">
@@ -37,21 +38,79 @@
             </div>
         </div>
     </header>
-    <section id="banner" class="container mt-5" >
-        <div class="row">
-            <div class="col-lg">
-                <h1 class="banner-title mt-5">We Create Content That Ranks</h1>
-                <a class="banner-button mt-4" href="#">SEE OUR WORK</a>
-            </div>
-            <div class="col">
-                <img class="banner-img img-fluid" src="./assets/BannerPict.png" alt="Banner Picture" width="740px" height="566px">
+
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg">
+                    <h1 class="banner-title mt-5">We Create Content That Ranks</h1>
+                    <a class="banner-button" href="#">SEE OUR WORK</a>
+                </div>
+                <div class="col d-none d-xl-block">
+                    <img class="img-fluid" src="./assets/BannerPict.png" alt="Banner Picture" width="740px" height="566px">
+                </div>
             </div>
         </div>
     </section>
 
+    <section id="about">
+        <div class="container mt-5 text-center">
+            <h1 class="about-tittle mb-0">About Us</h1>
+            <img src="./assets/Line.png" alt="Underline" height="3px" width="100px">
+            <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container mt-5 text-center">
+            <h1 class="services-tittle mb-0">Our Valuable Services</h1>
+            <img src="./assets/Line.png" alt="Underline" height="3px" width="100px">
+        </div>
+        <div class="container">
+            <div class="slider">
+                <div class="owl-carousel">
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="./assets/Carousel1.png" class="card-img-top" alt="Carousel 1" >
+                        </div>
+                        <h5 class="mb-0 text-center"><b>App Development</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="./assets/Carousel2.png" class="card-img-top" alt="Carousel 2">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Web Development</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="./assets/Carousel3.png" class="card-img-top" alt="Carousel 3">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>UI UX Design</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="./assets/Carousel4.png" class="card-img-top" alt="Carousel 4">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Enterprise Architecture</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="./assets/Carousel5.png" class="card-img-top" alt="Carousel 5">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Management Services</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
 
     <section id="ourwork" style="background-color:#020E35 ;">
-        
         <div class="container"  >
             <h1 style="text-align:center; color: #ffff; font-size: 40px;">Our Work</h1>
         <br>
@@ -152,8 +211,11 @@
             <p style="font-size: 12px ; color: #ffff; text-align: center;">2020 © All rights reserved by BuildCode</p>
         </div>
     </section>
-  
-    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/carousel.js"></script>
 </body>
 </html>
