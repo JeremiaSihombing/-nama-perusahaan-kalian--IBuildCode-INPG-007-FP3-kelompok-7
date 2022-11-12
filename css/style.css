@@ -97,3 +97,7 @@
 .owl-dots .owl-dot.active {
     background: #f44336 !important;
 }
+
+.sizeImg {
+    width: 99%;
+}
