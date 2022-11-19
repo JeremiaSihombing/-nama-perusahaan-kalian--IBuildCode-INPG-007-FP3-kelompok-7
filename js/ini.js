@@ -12,5 +12,8 @@ butMess.addEventListener("click", function(event) {
             alert ("please fill out the form first!")
         } else {
             alert ("Are you sure you want to send a message with : \nEmail : " + email + "\nSubject : " + subject + "\nMessage : " + mess)
+            $("#inEmail").val("")
+            $("#inSubject").val("")
+            $("#inMess").val("")
         }
 })
